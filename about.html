@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bountiful Foods</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body onload="initMap()">
+    <header>
+        <a id="logo-container" href="index.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="about.html">About Us</a>
+            
+        </nav>
+        <div id="socials">
+            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
+        <a id="hamburger" href="#">&#8801;</a>
+        <a id="close" href="#">&#10005;</a>
+    </header>
+    <main>
+        <section id="company-info">
+            <h2>Information about our company</h2>
+            <h3>Bountiful Foods</h3>
+            <p>
+                Welcome to Bountiful Foods! We're a small business based in 
+                Los Angeles, California that's passionate about bringing you the
+                freshest and healthiest food options. Our food trucks cover the
+                coastal area from Los Angeles to San Diego, so whether you're a
+                local or a tourist, you can enjoy our delicious organic, locally
+                grown foods.
+    
+                We source our fruits and produce directly from local farmers, 
+                as well as some national and international suppliers, to bring
+                you the best of both worlds. Our made-to-order organic fruit 
+                drinks and fruit bags are perfect for a quick and healthy snack 
+                on the go.
+                
+                We cater to walk-in traffic at our storefront in Los Angeles, and
+                we also manage phone and website orders for delivery. Our mission
+                is to provide you with fresh and healthy food options that support
+                your healthy lifestyle, while also making it convenient for you 
+                to enjoy them.
+                
+                So come on down to our storefront or find us on the road with our
+                food trucks! We can't wait to share our love for organic, locally
+                grown foods with you.
+            </p>
+        </section>
+
+        <section id="contact-info">
+            <h3>Bountiful Foods - Contact Information</h3>
+            <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+            <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+            <p>Address: <a href="https://goo.gl/maps/UZrhBrqTTwXQf9V68">123 Street, Los Angeles, CA</a></p>
+            <div id='map'></div>
+        </section>
+
+    </main>
+    <footer>
+        <a id="logo-container" href="index.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <a href="mailto:example@gmail.com">example@gmail.com</a>
+        <a href="tel:2082900619">(208)290-0619</a>
+        <a href="about.html">About Us</a>
+        <p>Last Modfied: <span id="lastModified"></span></p>
+        <h3>Morris Hinneh WDD230</h3>
+        <div id="socials">
+            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+    <script src="scripts/about.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5ZMltjkJ4JWzHaKTDULh77O76jov6uGw"></script>
+</body>
+
+</html>

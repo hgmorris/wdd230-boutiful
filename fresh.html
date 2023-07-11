@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods - Fresh</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <a id="logo-container" href="index.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="about.html">About Us</a>
+            
+        </nav>
+        <div id="socials">
+            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
+        <a id="hamburger" href="#">&#8801;</a>
+        <a id="close" href="#">&#10005;</a>
+    </header>
+    <main>
+        <h2>Fruit Smoothie Order</h2>
+	    <form id="order-form">
+	    	<div class="form-group">
+	    		<label for="first-name">First Name:</label>
+	    		<input type="text" id="first-name" name="first-name" required>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="email">Email:</label>
+	    		<input type="email" id="email" name="email" required>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="phone">Phone:</label>
+	    		<input type="tel" id="phone" name="phone" required>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="fruit1">Fruit 1:</label>
+	    		<select id="fruits1" name="fruit" required></select>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="fruit2">Fruit 2:</label>
+	    		<select id="fruits2" name="fruit" required></select>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="fruit3">Fruit 3:</label>
+	    		<select id="fruits3" name="fruit" required></select>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="special-instructions">Special Instructions:</label>
+	    		<textarea id="special-instructions" name="special-instructions"></textarea>
+	    	</div>
+	    	<button type="submit">Submit</button>
+	    </form>
+        <div>
+            <h3 id="output"></h3>
+        </div>    
+        
+    </main>
+    <footer>
+        <a id="logo-container" href="index.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <a href="mailto:example@gmail.com">example@gmail.com</a>
+        <a href="tel:2082900619">(208)290-0619</a>
+        <a href="about.html">About Us</a>
+        <p>Last Modfied: <span id="lastModified"></span></p>
+        <h3>Morris Hinneh WDD230</h3>
+        <div id="socials">
+            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+	<script src="scripts/fresh.js"></script>
+</body>
+</html>
