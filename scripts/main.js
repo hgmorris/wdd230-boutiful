@@ -35,9 +35,15 @@ document.querySelector('#condition').textContent =  data.currentConditions.condi
 document.querySelector('#weather_icon').src = image;
 document.querySelector('#weather_icon').alt= data.currentConditions.conditions + ' icon';
 };
+const weather = "https://api.openweathermap.org/data/2.5/forecast?lat=36.7783&lon=119.4179&appid=B7NKJ24KZHZ58EX3SH9EE8J9E";
+const weatherapi = async () => {
+    const response = await fetch(apiURL);
+    const data = await response.json();
+    console.log(data);
+};
 
 
-
+weatherapi()
 //-------------------------------------------------------------------------------------
 
 const totalCount = localStorage.getItem('smoothieCount') || 0;

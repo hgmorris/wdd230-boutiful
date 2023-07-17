@@ -16,13 +16,13 @@ submitButton.addEventListener('click', function(event) {
 
 //------------------------------------------------------------------------------------
 
-const fruitsURL = "https://andejuli.github.io/wdd230/fruit.json";
+const fruitsURL = "../data/fruit.json";
 const getFruits = async () => {
     const response = await fetch(fruitsURL);
     const data = await response.json();
     console.log(data);
 
-    data.forEach(element => {
+    data.fruits.forEach(element => {
         var newoption = document.createElement("option");
         newoption.value = String(element.name);
         newoption.textContent = String(element.name);
@@ -31,7 +31,7 @@ const getFruits = async () => {
         select1.appendChild(newoption);
     });
 
-    data.forEach(element => {
+    data.fruits.forEach(element => {
         var newoption = document.createElement("option");
         newoption.value = String(element.name);
         newoption.textContent = String(element.name);
@@ -40,7 +40,7 @@ const getFruits = async () => {
         select2.appendChild(newoption);
     });
 
-    data.forEach(element => {
+    data.fruits.forEach(element => {
         var newoption = document.createElement("option");
         newoption.value = String(element.name);
         newoption.textContent = String(element.name);
@@ -56,7 +56,7 @@ getFruits();
 
 function calculateNutrition() {
     const getFruits = async () => {
-        const response = await fetch("https://andejuli.github.io/wdd230/fruit.json");
+        const response = await fetch("../data/fruit.json");
         const fruitsInfo = await response.json();
         let fruit1 = document.getElementById("fruits1");
 
