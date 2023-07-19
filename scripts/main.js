@@ -45,13 +45,7 @@ const weatherapi = async () => {
 weatherapi()
 //-------------------------------------------------------------------------------------
 
-let sc = Math.floor(Math.random()*100) + 1;
-if(sc >= 0){
-    localStorage.setItem("smoothieCount",new String(sc))
-}
-
 const totalCount = localStorage.getItem('smoothieCount') || 0;
-const totalElement = document.getElementById('number-of-drinks');
 totalElement.textContent = totalCount;
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
 

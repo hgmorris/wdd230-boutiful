@@ -1,7 +1,19 @@
-@media only screen and (min-midth:800px){
-header{ 
-    display: flex;
-    flex-direction: column;
-}
+@media (max-width: 800px) {
+
+    header {
+        display: flex;
+    
+        flex-direction: column;
+      }
+    
+    nav{
+        flex-direction: column;    
+    }
+    
+    nav a{
+    
+        margin: 1.5rem;
+    
+    }
 }
     

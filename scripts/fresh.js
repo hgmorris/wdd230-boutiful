@@ -10,7 +10,10 @@ submitButton.addEventListener('click', function(event) {
     
     smoothieCount += 1;
     
-    localStorage.setItem('smoothieCount', smoothieCount);
+localStorage.setItem('smoothieCount', smoothieCount);
+const totalCount = localStorage.getItem('smoothieCount') || 0;
+totalCount++;
+localStorage.setItem("smoothieCount", totalCount);
     
     
 });

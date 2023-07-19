@@ -1,6 +1,6 @@
 
 
-const fruitsURL = "../data/fruit.json";
+const fruitsURL = "./data/fruit.json";
 function calculateNutrition() {
     const getFruits = async () => {
         const response = await fetch("../data/fruit.json");
