@@ -17,7 +17,7 @@ submitButton.addEventListener('click', function(event) {
 
 //------------------------------------------------------------------------------------
 
-const fruitsURL = "../data/fruit.json";
+const fruitsURL = "./data/fruit.json";
 const getFruits = async () => {
     const response = await fetch(fruitsURL);
     const data = await response.json();

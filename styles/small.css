@@ -1,4 +1,4 @@
-@media (max-midth:800px){
+@media only screen and (min-midth:800px){
 header{ 
     display: flex;
     flex-direction: column;
