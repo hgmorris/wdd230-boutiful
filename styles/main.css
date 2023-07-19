@@ -176,7 +176,8 @@ main {
     max-height: 500px;
     justify-content: center;
     text-align: center;
-    background-color: #05668D;
+    text-decoration: white;
+    background-color: #5bb4d7;
     padding: 20px;
 }
 #weather img {
@@ -255,7 +256,7 @@ main {
     padding: 30px;
 }
 input[type="submit"] {
-    background-color: green;
+    background-color: rgb(9, 81, 9);
     border: none;
     color: white;
     font-size: 20px;
