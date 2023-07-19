@@ -46,33 +46,7 @@ weatherapi()
 //-------------------------------------------------------------------------------------
 
 const totalCount = localStorage.getItem('smoothieCount') || 0;
-totalElement.textContent = totalCount;
-//--------------------------------------------------------------------------------------------------------------------------------------------------------
-
-// const newsAPIURL = "https://newsapi.org/v2/everything?q=Los-Angeles-California-Food&sortBy=publishedAt&apiKey=2e9124a7be4943789b86e0761026ee46";
-// const getNews = async () => {
-//     const response = await fetch(newsAPIURL);
-//     const data = await response.json();
-//     console.log(data);
-
-//     for (let index = 0; index < 3; index++) {
-//         let newsArticle = data.articles[index];
-
-//         console.log(newsArticle.title);
-//         let tittle = document.querySelector(`#news${index} h3`);
-//         tittle.textContent = newsArticle.title;
-
-//         console.log(newsArticle.description);
-//         let description = document.querySelector(`#news${index} p`);
-//         description.textContent = newsArticle.description;
-
-//         console.log(newsArticle.urlToImage);
-//         let image = document.querySelector(`#news${index} img`);
-//         image.src = newsArticle.urlToImage;
-//     }
-// }
-
-
+const totalElement = document.getElementById('number-of-drinks');
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -87,8 +61,6 @@ function initMap() {
   }
 
 async function loadAll(){
-    // cycleImages();
     await getWeather();
-    await getNews();
     initMap();
 }
