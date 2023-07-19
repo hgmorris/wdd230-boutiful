@@ -19,7 +19,6 @@ function cycleImages() {
 }
 
 
-
 //----------------------------------------------------------------------------------------------------------------------------------------
 
 const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Los%20Angeles%2C%20California?unitGroup=metric&key=B7NKJ24KZHZ58EX3SH9EE8J9E&contentType=json";
@@ -30,7 +29,7 @@ const getWeather = async () => {
     let t = data.currentConditions.temp;
     document.querySelector('#t').textContent = Math.round(t * 5/9 +32 );
     let image = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.currentConditions.icon}.svg`;
-document.querySelector('#ws').textContent = data.currentConditions.windspeed;
+document.querySelector('#ws').textContent = Math.ceil(data.currentConditions.windspeed);
 document.querySelector('#condition').textContent =  data.currentConditions.conditions;
 document.querySelector('#weather_icon').src = image;
 document.querySelector('#weather_icon').alt= data.currentConditions.conditions + ' icon';
@@ -45,6 +44,11 @@ const weatherapi = async () => {
 
 weatherapi()
 //-------------------------------------------------------------------------------------
+
+let sc = Math.floor(Math.random()*100) + 1;
+if(sc >= 0){
+    localStorage.setItem("smoothieCount",new String(sc))
+}
 
 const totalCount = localStorage.getItem('smoothieCount') || 0;
 const totalElement = document.getElementById('number-of-drinks');

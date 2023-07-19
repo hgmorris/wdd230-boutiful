@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Foods - Fresh</title>
     <link rel="stylesheet" href="styles/main.css">
+  <script src="./scripts/fresh.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,36 +27,34 @@
     </header>
     <main>
         <h2>Fruit Smoothie Order</h2>
-	    <form id="order-form">
-	    	<div class="form-group">
+	    <form id="order-form" method="get" action="/thankyou.html">
+	    	<!-- <div class="form-group"> -->
 	    		<label for="first-name">First Name:</label>
 	    		<input type="text" id="first-name" name="first-name" required>
-	    	</div>
-	    	<div class="form-group">
+	    	<!-- </div> -->
+	    	<!-- <div class="form-group"> -->
 	    		<label for="email">Email:</label>
 	    		<input type="email" id="email" name="email" required>
-	    	</div>
-	    	<div class="form-group">
+	    	<!-- </div> -->
+	    	<!-- <div class="form-group"> -->
 	    		<label for="phone">Phone:</label>
 	    		<input type="tel" id="phone" name="phone" required>
-	    	</div>
-	    	<div class="form-group">
-	    		<label for="fruit1">Fruit 1:</label>
+	    		<label for="fruits1">Fruit 1:</label>
 	    		<select id="fruits1" name="fruit" required></select>
-	    	</div>
-	    	<div class="form-group">
-	    		<label for="fruit2">Fruit 2:</label>
+	    	<!-- </div> -->
+	    	<!-- <div class="form-group"> -->
+	    		<label for="fruits2">Fruit 2:</label>
 	    		<select id="fruits2" name="fruit" required></select>
-	    	</div>
-	    	<div class="form-group">
-	    		<label for="fruit3">Fruit 3:</label>
+	    	<!-- </div> -->
+	    	<!-- <div class="form-group"> -->
+	    		<label for="fruits3">Fruit 3:</label>
 	    		<select id="fruits3" name="fruit" required></select>
-	    	</div>
-	    	<div class="form-group">
+	    	<!-- </div> -->
+	    	<!-- <div class="form-group"> -->
 	    		<label for="special-instructions">Special Instructions:</label>
 	    		<textarea id="special-instructions" name="special-instructions"></textarea>
-	    	</div>
-	    	<button type="submit">Submit</button>
+	    	<!-- </div> -->
+	    	<input type="submit" value="Submit order"/>
 	    </form>
         <div>
             <h3 id="output"></h3>
@@ -75,6 +74,5 @@
             <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
         </div>
     </footer>
-	<script src="scripts/fresh.js"></script>
 </body>
 </html>

@@ -3,14 +3,15 @@ let lastModifiedSpan = document.getElementById("lastModified");
 lastModifiedSpan.innerHTML = lastModified;
 //----------------------------------------------------------------------------------
 
-const submitButton = document.querySelector('button[type="submit"]');
+const submitButton = document.querySelector('input[type="submit"]');
 let smoothieCount = parseInt(localStorage.getItem("smoothieCount"));
 submitButton.addEventListener('click', function(event) {
-    event.preventDefault();
+    
     
     smoothieCount += 1;
     
     localStorage.setItem('smoothieCount', smoothieCount);
+    
     
 });
 
@@ -54,23 +55,8 @@ getFruits();
 
 //----------------------------------------------------------------------------------------
 
-function calculateNutrition() {
-    const getFruits = async () => {
-        const response = await fetch("../data/fruit.json");
-        const fruitsInfo = await response.json();
-        let fruit1 = document.getElementById("fruits1");
-
-        fruitsInfo.forEach(element => {
-            if (element.name == fruit1.target.value){
-                console.log(element.nutritions);
-            }
-        });
-    }
-
-}
-
 function submitForm(event) {
-    event.preventDefault();
+   
     var firstName = document.getElementById('firstName').value;
     var email = document.getElementById('email').value;
     var phone = document.getElementById('phone').value;
